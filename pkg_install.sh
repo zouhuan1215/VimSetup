@@ -1,5 +1,6 @@
+#! /bin/bash
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-git clone https://github.com/tpope/vim-pathogen &&
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim &&
 cd ~/.vim/bundle &&
 
 git clone https://github.com/jiangmiao/auto-pairs.git &&
@@ -13,7 +14,7 @@ git clone https://github.com/altercation/vim-colors-solarized.git &&
 git clone https://github.com/fatih/vim-go.git &&
 git clone https://github.com/mhinz/vim-grepper.git &&
 git clone https://github.com/lifepillar/vim-solarized8.git &&
-git clone https://github.com/simeji/winresizer.git &&
+git clone https://github.com/simeji/winresizer.git
 
 # ================Need Extra Conf, see its github repo===============
 # [YouCompleteMe]git clone --recursive https://github.com/ycm-core/YouCompleteMe.git
