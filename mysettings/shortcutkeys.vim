@@ -1,26 +1,38 @@
-let mapleader=","
-
-" =======================================NERDTrees========================================
-map <leader>nn :NERDTreeToggle<CR>
-map <leader>nb :NERDTreeFromBookmark
-map <leader>nf :NERDTreeFind<cr>
-
-" =====================================YouCompleteMe
-nnoremap <space>jd :YcmCompleter GoToDefinition<cr>
-nnoremap <space>jj :YcmCompleter GoToDefinitionElseDeclaration<cr>
-nnoremap <space>jg :YcmCompleter GoToDeclaration<cr>
-nnoremap <space>jk :YcmCompleter GoToInclude= 'horizontal-split'<cr>
-nnoremap <space><space> :YcmCompleter FixIt<cr>
-
-"=========================== Smart ways to move between windows =========================
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
-" =========================== Move between tabs ========================
-map <space>l :tabn<cr>
-map <space>h :tabp<cr>
-
-" =========================== Vim-Grepper Configs ======================
-nnoremap <leader>g :Grepper<cr>
+let mapleader=","                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                              
+" =======================================NERDTrees========================================                                                                                                                                                    
+map <leader>nn :NERDTreeToggle<CR>                                                                                                                                                                                                            
+map <leader>nb :NERDTreeFromBookmark                                                                                                                                                                                                          
+map <leader>nf :NERDTreeFind<cr>                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              
+" =====================================YouCompleteMe                                                                                                                                                                                          
+nnoremap <space>jd :YcmCompleter GoToDefinition<cr>                                                                                                                                                                                           
+nnoremap <space>jj :YcmCompleter GoToDefinitionElseDeclaration<cr>                                                                                                                                                                            
+nnoremap <space>jg :YcmCompleter GoToDeclaration<cr>                                                                                                                                                                                          
+nnoremap <space>jk :YcmCompleter GoToInclude= 'horizontal-split'<cr>                                                                                                                                                                          
+nnoremap <space><space> :YcmCompleter FixIt<cr>                                                                                                                                                                                               
+                                                                                                                                                                                                                                              
+"=========================== Smart ways to move between windows =========================                                                                                                                                                     
+map <C-j> <C-W>j                                                                                                                                                                                                                              
+map <C-k> <C-W>k                                                                                                                                                                                                                              
+map <C-h> <C-W>h                                                                                                                                                                                                                              
+map <C-l> <C-W>l                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              
+" =========================== Move between tabs ========================                                                                                                                                                                      
+map <space>l :tabn<cr>                                                                                                                                                                                                                        
+map <space>h :tabp<cr>                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                              
+" =========================== Vim-Grepper Configs ======================                                                                                                                                                                      
+nnoremap <leader>g :Grepper<cr>                                                                                                                                                                                                               
+nnoremap <leader>hh :Grepper -tool ag -cword -noprompt<cr>                                                                                                                                                                                    
+                                                                                                                                                                                                                                              
+" =========================== Vim-Go Mappings =========================                                                                                                                                                                       
+nnoremap <leader>d :GoDef<cr>                                                                                                                                                                                                                 
+nnoremap <leader>a :GoDefPop<cr>                                                                                                                                                                                                              
+                                                                                                                                                                                                                                              
+" ========================== QuickFix Window Mappings =================                                                                                                                                                                       
+let g:qfenter_keymap = {}                                                                                                                                                                                                                     
+let g:qfenter_keymap.open = ['<CR>', '<2-LeftMouse>']                                                                                                                                                                                         
+let g:qfenter_keymap.vopen = ['<Space><CR>']                                                                                                                                                                                                  
+let g:qfenter_keymap.hopen = ['<Leader><Space>']                                                                                                                                                                                              
+let g:qfenter_keymap.topen = ['<Space><Space>']       
